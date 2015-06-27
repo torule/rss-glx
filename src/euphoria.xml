@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="euphoria" _label="Euphoria">
+
+  <command arg="-r"/>
+
+  <number id="02" type="spinbutton" arg="-i %"
+          _label="Number of wisps" low="0" high="100" default="5"/>
+
+  <number id="03" type="spinbutton" arg="-b %"
+          _label="Number of background layers" low="0" high="100" default="2"/>
+
+  <select id="04">
+    <option id="04A" _label="Texture - Default"/>
+    <option id="04B" _label="Texture - none" arg-set="-t 0"/>
+    <option id="04C" _label="Texture - Plasma" arg-set="-t 1"/>
+    <option id="04D" _label="Texture - Stringy" arg-set="-t 2"/>
+    <option id="04E" _label="Texture - Linear" arg-set="-t 3"/>
+    <option id="04F" _label="Texture - random" arg-set="-t 4"/>
+  </select>
+
+  <number id="05" type="slider" arg="-d %"
+          _label="Mesh density" _low-label="Smaller" _high-label="Larger"
+          low="2" high="100" default="25"/>
+
+  <number id="06" type="slider" arg="-v %"
+          _label="Visibilility" _low-label="Less" _high-label="More"
+          low="1" high="100" default="35"/>
+
+  <number id="07" type="slider" arg="-s %"
+          _label="Speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="15"/>
+
+  <number id="08" type="slider" arg="-f %"
+          _label="Feedback" _low-label="Less" _high-label="More"
+          low="0" high="100" default="0"/>
+
+  <number id="09" type="slider" arg="-e %"
+          _label="Feedbackspeed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="1"/>
+
+  <number id="10" type="slider" arg="-c %"
+          _label="Feedback texture size" _low-label="Less" _high-label="More"
+          low="2" high="10" default="3"/>
+
+  <boolean id="11" _label="Draw wireframe" arg-set="-w"/>
+
+  <select id="01">
+    <option id="01A" _label="Preset - Custom"/>
+    <option id="01B" _label="Preset - Regular" arg-set="-p 1"/>
+    <option id="01C" _label="Preset - Grid" arg-set="-p 2"/>
+    <option id="01D" _label="Preset - Cubism" arg-set="-p 3"/>
+    <option id="01E" _label="Preset - Bad math" arg-set="-p 4"/>
+    <option id="01F" _label="Preset - M-theory" arg-set="-p 5"/>
+    <option id="01G" _label="Preset - UHFTEM" arg-set="-p 6"/>
+    <option id="01H" _label="Preset - Nowhere" arg-set="-p 7"/>
+    <option id="01I" _label="Preset - Echo" arg-set="-p 8"/>
+    <option id="01J" _label="Preset - Kaleidoscope" arg-set="-p 9"/>
+  </select>
+
+  <_description>
+Floating translucent wisps of color.
+
+Note: Presets override all other settings. If you wish to customize the other options, make sure the preset option is set to "Preset - Custom".
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

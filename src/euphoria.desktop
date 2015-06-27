@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=euphoria
+Icon=preferences-desktop-screensaver
+X-KDE-ServiceTypes=ScreenSaver
+X-KDE-Category=OpenGL Screen Savers
+X-KDE-Type=OpenGL
+Type=Service
+Actions=Setup;InWindow;Root
+Name=Euphoria (GL)
+
+[Desktop Action Setup]
+Exec=kxsconfig euphoria
+Name=Setup...
+
+[Desktop Action InWindow]
+Exec=kxsrun euphoria -- -window-id %w
+Name=Display in specified window
+NoDisplay=true
+ 
+[Desktop Action Root]
+Exec=kxsrun euphoria -- --root
+Name=Display in root window
+NoDisplay=true

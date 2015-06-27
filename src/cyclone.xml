@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="cyclone" _label="Cyclone">
+
+  <command arg="-r"/>
+
+  <number id="01" type="spinbutton" arg="-c %"
+          _label="Cyclones" low="1" high="10" default="1"/>
+
+  <number id="02" type="spinbutton" arg="-p %"
+          _label="Particles per cyclone" low="1" high="10000" default="200"/>
+
+
+  <number id="03" type="slider" arg="-i %"
+          _label="Particle size" _low-label="Smaller" _high-label="Larger"
+          low="1" high="100" default="7"/>
+
+  <number id="04" type="slider" arg="-C %"
+          _label="Cyclone complexity" _low-label="Less" _high-label="More"
+          low="1" high="10" default="3"/>
+
+  <number id="05" type="slider" arg="-e %"
+          _label="Speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="10"/>
+
+  <boolean id="06" _label="Stretch" arg-unset="-S"/>
+  <boolean id="07" _label="Show Curves" arg-set="-v"/>
+
+  <_description>
+Writhing tornadoes.
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/Source/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

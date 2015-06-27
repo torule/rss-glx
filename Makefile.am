@@ -1,0 +1,3 @@
+AM_LDFLAGS=@GLEW@
+
+SUBDIRS=src utils

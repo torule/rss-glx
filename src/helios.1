@@ -1,0 +1,93 @@
+.TH "Really Slick ScreenSavers" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+helios - attraction/repulsion particle effects and some smooth surfaces.
+.SH SYNOPSIS
+.B helios
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--ions/-i \fInumber\fP]
+[\--size/-s \fInumber\fP]
+[\--emitters/-e \fInumber\fP]
+[\--attracters/-a \fInumber\fP]
+[\--speed/-S \fInumber\fP]
+[\--cameraspeed/-c \fInumber\fP]
+[\--surface/-u]
+[\--no-surface/-U]
+[\--blur/-b \fInumber\fP]
+[\--wireframe/-w]
+[\--no-wireframe/-W]
+.SH DESCRIPTION
+From Terry Walsh (\fIhttp://reallyslick.com\fP):
+"Throw together some attraction/repulsion particle effects and some smooth surfaces and this is what you get. It's pretty insane >=)"
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--ions \fInumber\fP
+Number of ions.  0 - 30000.  Default: 1500
+.TP 8
+.B \--size \fInumber\fP
+Ion size.  1 - 100.  Default: 10
+.TP 8
+.B \--emitters \fInumber\fP
+Number of emitters.  1 - 10.  Default: 3
+.TP 8
+.B \--attracters \fInumber\fP
+Number of attracters.  1 - 10.  Default: 3
+.TP 8
+.B \--speed \fInumber\fP
+Animation speed.  1 - 100.  Default: 10
+.TP 8
+.B \--cameraspeed \fInumber\fP
+Camera speed.  0 - 100.  Default: 10
+.TP 8
+.B \--surface
+Helios Surfaces.  Default: True
+.TP 8
+.B \--blur
+Motion Blur.  0 - 100.  Default: 10
+.TP 8
+.B \--wireframe
+Wireframe surfaces.  Default: False
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2002 by Terry Walsh and Tugrul Galatali.  
+
+Helios is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+Helios is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Terry Walsh and Tugrul Galatali <tugrul@galatali.com>
+

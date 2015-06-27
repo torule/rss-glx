@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=hyperspace
+Icon=preferences-desktop-screensaver
+X-KDE-ServiceTypes=ScreenSaver
+X-KDE-Category=OpenGL Screen Savers
+X-KDE-Type=OpenGL
+Type=Service
+Actions=Setup;InWindow;Root
+Name=Hyperspace (GL)
+
+[Desktop Action Setup]
+Exec=kxsconfig hyperspace
+Name=Setup...
+
+[Desktop Action InWindow]
+Exec=kxsrun hyperspace -- -window-id %w
+Name=Display in specified window
+NoDisplay=true
+ 
+[Desktop Action Root]
+Exec=kxsrun hyperspace -- --root
+Name=Display in root window
+NoDisplay=true

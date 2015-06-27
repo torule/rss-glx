@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="flux" _label="Flux">
+
+  <command arg="-r"/>
+
+  <number id="02" type="spinbutton" arg="-f %"
+          _label="Number of flux fields" low="1" high="100" default="1"/>
+
+  <number id="03" type="spinbutton" arg="-p %"
+          _label="Particles per field" low="1" high="1000" default="20"/>
+
+  <number id="04" type="spinbutton" arg="-t %"
+          _label="Trail length of particles" low="3" high="10000" default="40"/>
+
+  <select id="05">
+    <option id="05A" _label="Geometry - Default"/>
+    <option id="05B" _label="Geometry - Points" arg-set="-g 0"/>
+    <option id="05C" _label="Geometry - Spheres" arg-set="-g 1"/>
+    <option id="05D" _label="Geometry - Lights" arg-set="-g 2"/>
+  </select>
+
+  <number id="06" type="slider" arg="-s %"
+          _label="Particle size" _low-label="Smaller" _high-label="Larger"
+          low="1" high="100" default="15"/>
+
+  <number id="07" type="slider" arg="-c %"
+          _label="Sphere complexity" _low-label="Less" _high-label="More"
+          low="0" high="100" default="3"/>
+
+  <number id="08" type="slider" arg="-R %"
+          _label="Frequency of randomization" _low-label="Less" _high-label="More"
+          low="0" high="100" default="0"/>
+
+  <number id="09" type="slider" arg="-e %"
+          _label="Expansion rate" _low-label="Slower" _high-label="Faster"
+          low="0" high="100" default="40"/>
+
+  <number id="10" type="slider" arg="-o %"
+          _label="Rotation rate" _low-label="Slower" _high-label="Faster"
+          low="0" high="100" default="30"/>
+
+  <number id="11" type="slider" arg="-w %"
+          _label="Crosswind speed" _low-label="Slower" _high-label="Faster"
+          low="0" high="100" default="20"/>
+
+  <number id="12" type="slider" arg="-i %"
+          _label="Instability" _low-label="Less" _high-label="More"
+          low="0" high="10" default="20"/>
+
+  <number id="13" type="slider" arg="-b %"
+          _label="Motion blur" _low-label="Less" _high-label="More"
+          low="0" high="100" default="0"/>
+
+  <select id="01">
+    <option id="01A" _label="Preset - Custom"/>
+    <option id="01B" _label="Preset - Regular" arg-set="-P 1"/>
+    <option id="01C" _label="Preset - Hypnotic" arg-set="-P 2"/>
+    <option id="01D" _label="Preset - Insane" arg-set="-P 3"/>
+    <option id="01E" _label="Preset - Sparklers" arg-set="-P 4"/>
+    <option id="01F" _label="Preset - Paradigm" arg-set="-P 5"/>
+    <option id="01G" _label="Preset - Fusion" arg-set="-P 6"/>
+  </select>
+
+  <_description>
+Shooting particles based on strange attractors.
+
+Note: Presets override all other settings. If you wish to customize the other options, make sure the preset option is set to "Preset - Custom".
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

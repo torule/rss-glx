@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="biof" _label="BioF">
+
+  <command arg="-r"/>
+
+  <select id="01">
+    <option id="01A" _label="Preset - Random"/>
+    <option id="01B" _label="Preset - Triangles" arg-set="-P 1"/>
+    <option id="01C" _label="Preset - Spheres" arg-set="-P 2"/>
+    <option id="01D" _label="Preset - Big Spheres" arg-set="-P 3"/>
+    <option id="01E" _label="Preset - Points" arg-set="-P 4"/>
+    <option id="01F" _label="Preset - Lightmap" arg-set="-P 5"/>
+  </select>
+
+  <number id="02" type="spinbutton" arg="-l %"
+          _label="Number of lines" low="1" high="1024" default="16"/>
+
+  <number id="03" type="spinbutton" arg="-p %"
+          _label="Number of points per line" low="1" high="4096" default="32"/>
+
+  <boolean id="04" _label="Draw offangle" arg-set="-o"/>
+
+  <_description>
+This is an attempt to recreate some of the work of William Latham. Take a look at the program 'organic art' at this site (http://www.artworks.co.uk).
+
+Written by Ronald Hordijk &lt;hk at dgmr.nl&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

@@ -1,0 +1,17 @@
+Info from original Windows source.
+
+############################## Colorfire:
+-----------------------------
+| The OpenGL Challenge
+| http://videogamer.dhs.org/
+-----------------------------
+Info File
+
+Author: Andreas Gustafsson
+Email: sdw@lysator.liu.se
+Homepage: www.lysator.liu.se/~sdw/
+Visual Effect's Name: Colorfire
+Description:
+Color-fire-explosion-thing-effect. This didn't take me long to do,
+and I didn't write more than approximately 100 lines of
+code, but the result is still not that bad!

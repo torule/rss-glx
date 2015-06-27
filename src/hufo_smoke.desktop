@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=hufo_smoke
+Icon=preferences-desktop-screensaver
+X-KDE-ServiceTypes=ScreenSaver
+X-KDE-Category=OpenGL Screen Savers
+X-KDE-Type=OpenGL
+Type=Service
+Actions=Setup;InWindow;Root
+Name=Hufo's Smoke (GL)
+
+[Desktop Action Setup]
+Exec=kxsconfig hufo_smoke
+Name=Setup...
+
+[Desktop Action InWindow]
+Exec=kxsrun hufo_smoke -- -window-id %w
+Name=Display in specified window
+NoDisplay=true
+ 
+[Desktop Action Root]
+Exec=kxsrun hufo_smoke -- --root
+Name=Display in root window
+NoDisplay=true

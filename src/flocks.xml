@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="flocks" _label="Flocks">
+
+  <command arg="-r"/>
+
+  <number id="01" type="spinbutton" arg="-l %"
+          _label="Leaders" low="1" high="100" default="4"/>
+
+  <number id="02" type="spinbutton" arg="-f %"
+          _label="Followers" low="0" high="10000" default="400"/>
+
+  <select id="03">
+    <option id="03A" _label="Geometry - Blobs"/>
+    <option id="03B" _label="Geometry - Dots" arg-set="-G"/>
+  </select>
+
+  <number id="04" type="slider" arg="-i %"
+          _label="Bug size" _low-label="Smaller" _high-label="Larger"
+          low="1" high="100" default="10"/>
+
+  <number id="05" type="slider" arg="-o %"
+          _label="Blob complexity" _low-label="Less" _high-label="More"
+          low="1" high="10" default="1"/>
+
+  <number id="06" type="slider" arg="-s %"
+          _label="Speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="15"/>
+
+  <number id="07" type="slider" arg="-S %"
+          _label="Stretch" _low-label="Less" _high-label="More"
+          low="0" high="100" default="20"/>
+
+  <number id="08" type="slider" arg="-O %"
+          _label="Color fade speed" _low-label="Slower" _high-label="Faster"
+          low="0" high="100" default="15"/>
+
+  <boolean id="09" _label="ChromaDepth glasses" arg-set="-k"/>
+  <boolean id="10" _label="Show connections" arg-set="-c"/>
+
+  <number id="11" type="slider" arg="-t %"
+          _label="Trail Length" _low-label="Shorter" _high-label="Longer"
+          low="0" high="250" default="0"/>
+
+  <number id="12" type="slider" arg="-b %"
+          _label="Motion blur" _low-label="Less" _high-label="More"
+          low="0" high="100" default="0"/>
+
+  <select id="13">
+    <option id="13A" _label="Preset - Custom"/>
+    <option id="13B" _label="Preset - Normal" arg-set="-p 1"/>
+    <option id="13C" _label="Preset - Trails" arg-set="-p 2"/>
+    <option id="13D" _label="Preset - Blurred Trails" arg-set="-p 3"/>
+    <option id="13E" _label="Preset - Blurred Connections" arg-set="-p 4"/>
+    <option id="13F" _label="Preset - Circles" arg-set="-p 5"/>
+    <option id="13G" _label="Preset - Circles Random" arg-set="-p 6"/>
+  </select>
+
+  <_description>
+Flocking in 3D.
+
+Note: Presets override all other settings. If you wish to customize the other options, make sure the preset option is set to "Preset - Custom".
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

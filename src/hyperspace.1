@@ -1,0 +1,83 @@
+.TH "Really Slick ScreenSavers" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+hyperspace - Flying through hyper space.
+.SH SYNOPSIS
+.B hyperspace
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--speed/-s \fInumber\fP]
+[\--stars/-S \fInumber\fP]
+[\--starsize/-t \fInumber\fP]
+[\--resolution/-R \fInumber\fP]
+[\--depth/-d \fInumber\fP]
+[\--fov/-f \fInumber\fP]
+[\--no-shader/-H]
+.SH DESCRIPTION
+From Terry Walsh (\fIhttp://reallyslick.com\fP):
+"This is a real number cruncher of a screensaver. Computers are getting much more powerful these days, and my old savers don't bring them to their knees like they used to. This one does. Of course, you can still turn the settings way down if you have a pathetic, old computer."
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--speed \fInumber\fP
+Speed of fly through.  1 - 100.  Default: 10
+.TP 8
+.B \--stars \fInumber\fP
+Number of stars.  0 - 10000.  Default: 1000
+.TP 8
+.B \--starsize \fInumber\fP
+Size of stars.  1 - 100.  Default: 10
+.TP 8
+.B \--resolution \fInumber\fP
+Resolution of the goo.  4 - 20.  Default: 10
+.TP 8
+.B \--depth \fInumber\fP
+Depth of the scene.  1 - 10.  Default: 5
+.TP 8
+.B \--fov \fInumber\fP
+Field of view.  10 - 150.  Default: 10
+.TP 8
+.B \--no-shader
+Disables use of vertex/fragment shaders, in case they do not work as expected.
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2005 by Terry Walsh and Tugrul Galatali.
+
+Hyperspace is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+Hyperspace is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Terry Walsh and Tugrul Galatali <tugrul@galatali.com>
+

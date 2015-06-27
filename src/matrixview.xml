@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="matrixview" _label="MatrixView">
+
+  <command arg="-r"/>
+
+  <number id="01" type="slider" arg="-s %"
+          _label="Scene Interval" _low-label="Shorter" _high-label="Longer"
+          low="0" high="120" default="5"/>
+
+  <number id="02" type="slider" arg="-m %"
+          _label="Matrix Interval" _low-label="Shorter" _high-label="Longer"
+          low="3" high="120" default="5"/>
+
+  <number id="03" type="slider" arg="-X %"
+          _label="Horizontal Resolution" _low-label="Higher" _high-label="Lower"
+          low="40" high="320" default="90"/>
+
+  <number id="04" type="slider" arg="-Y %"
+          _label="Vertical Resolution" _low-label="Higher" _high-label="Lower"
+          low="30" high="240" default="70"/>
+
+  <string id="05" _label="Photo directory" arg="-i %" />
+
+  <number id="06" type="slider" arg="-c %"
+          _label="Contrast" _low-label="Low" _high-label="High"
+          low="0" high="100" default="75"/>
+
+  <_description>
+Seeing things in the matrix.
+
+Written by Alex Zolotov &lt;nightradio at knoppix.ru&gt;
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

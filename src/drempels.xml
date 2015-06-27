@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="drempels" _label="drempels">
+
+  <command arg="-r"/>
+
+  <number id="01" type="slider" arg="-b %"
+          _label="Blur" _low-label="Less" _high-label="More"
+          low="0" high="10" default="7"/>
+
+  <number id="03" type="slider" arg="-s %"
+          _label="Speed" _low-label="Slower" _high-label="Faster"
+          low="0" high="20" default="10"/>
+
+  <number id="04" type="slider" arg="-S %"
+          _label="Scale" _low-label="Smaller" _high-label="Bigger"
+          low="0" high="20" default="10"/>
+
+  <number id="05" type="slider" arg="-c %"
+          _label="Control Point Density" _low-label="Less" _high-label="More"
+          low="4" high="8" default="4"/>
+
+  <number id="06" type="slider" arg="-R %"
+          _label="Resolution" _low-label="Less" _high-label="More"
+          low="4" high="8" default="4"/>
+
+  <string id="06" _label="Texture directory" arg="-i %" />
+
+  <number id="07" type="slider" arg="-I %"
+          _label="Texture change interval" _low-label="Less" _high-label="More"
+          low="1" high="60" default="10"/>
+
+  <number id="08" type="slider" arg="-f %"
+          _label="Texture fade duration" _low-label="Less" _high-label="More"
+          low="1" high="100" default="10"/>
+
+  <number id="08" type="slider" arg="-g %"
+          _label="Generated texture resolution" _low-label="Less" _high-label="More"
+          low="4" high="12" default="8"/>
+
+  <_description>
+Hallucinatory desktop enhancer.
+
+Written by Ryan M. Geiss &lt;guava at geissworks.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

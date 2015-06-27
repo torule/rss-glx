@@ -1,0 +1,38 @@
+Info from original Windows source.
+
+############################## Tunnel:
+-----------------------------
+| The OpenGL Challenge
+| http://videogamer.dhs.org/
+-----------------------------
+Info File
+
+Author: Hufo / N.A.A.
+Email: hufo@planet-d.net
+Homepage: http://hufo.planet-d.net/  (not ready yet)
+Visual Effect's Name: Hufo's little tunnel
+Description:
+  simple tunnel I've wrote 1 year ago, translated as my first OpenGL prog :-)
+  added some options+some optimisations
+  feel free to email me.
+  to run the prog, you will need demo.jpg and ijl.dll, take it from challenge.zip
+  to recompile the prog, you need ijl.h
+Hufo / N.A.A.
+
+############################## Tunnel Rebirth:
+-----------------------------
+| The OpenGL Challenge
+| http://videogamer.dhs.org/
+-----------------------------
+Info File
+
+Author: Hufo / N.A.A.
+Email: hufo@planet-d.net
+Homepage: http://hufo.planet-d.net/
+Visual Effect's Name: Hufo's Tunnel Rebirth
+Description:
+  A rewrited version of my first OpenGL Challenge entry. Something like a rebirth :)
+  After too much month of not participing to this challenge
+  I've done this little entry just to thanks Otry and BlackOrb for this great new website.
+  Next time I'll do someting more closely related to the subject...
+Hufo / N.A.A.

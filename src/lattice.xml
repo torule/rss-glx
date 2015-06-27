@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="lattice" _label="Lattice">
+
+  <command arg="-r"/>
+
+  <number id="02" type="spinbutton" arg="-l %"
+          _label="Longitudinal divisions of tori" low="4" high="100" default="16"/>
+
+  <number id="03" type="spinbutton" arg="-L %"
+          _label="Latitudinal divisions of tori" low="2" high="100" default="8"/>
+
+  <select id="04">
+    <option id="04A" _label="Material - Default"/>
+    <option id="04B" _label="Material - none" arg-set="-T 0"/>
+    <option id="04C" _label="Material - Industrial" arg-set="-T 1"/>
+    <option id="04D" _label="Material - Crystal" arg-set="-T 2"/>
+    <option id="04E" _label="Material - Chrome" arg-set="-T 3"/>
+    <option id="04F" _label="Material - Brass" arg-set="-T 4"/>
+    <option id="04G" _label="Material - Shiny" arg-set="-T 5"/>
+    <option id="04H" _label="Material - Ghostly" arg-set="-T 6"/>
+    <option id="04I" _label="Material - Circuits" arg-set="-T 7"/>
+    <option id="04J" _label="Material - Doughnuts" arg-set="-T 8"/>
+    <option id="04K" _label="Material - random" arg-set="-T 9"/>
+  </select>
+
+  <number id="05" type="slider" arg="-t %"
+          _label="Thickness of tori" _low-label="Smaller" _high-label="Larger"
+          low="1" high="100" default="50"/>
+
+  <number id="06" type="slider" arg="-d %"
+          _label="Density" _low-label="Less" _high-label="More"
+          low="1" high="100" default="50"/>
+
+  <number id="07" type="slider" arg="-D %"
+          _label="Depth" _low-label="Less" _high-label="More"
+          low="1" high="8" default="4"/>
+
+  <number id="08" type="slider" arg="-o %"
+          _label="Field of view" _low-label="Less" _high-label="More"
+          low="10" high="150" default="90"/>
+
+  <number id="09" type="slider" arg="-P %"
+          _label="Randomness of camera path" _low-label="Slower" _high-label="Faster"
+          low="1" high="10" default="7"/>
+
+  <number id="10" type="slider" arg="-e %"
+          _label="Speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="10"/>
+
+  <boolean id="11" _label="Smooth shading" arg-set="-s"/>
+  <boolean id="12" _label="Enable fog" arg-set="-f"/>
+
+  <select id="01">
+    <option id="01A" _label="Preset - Custom"/>
+    <option id="01B" _label="Preset - Regular" arg-set="-p 1"/>
+    <option id="01C" _label="Preset - Chainmail" arg-set="-p 2"/>
+    <option id="01D" _label="Preset - Brash Mesh" arg-set="-p 3"/>
+    <option id="01E" _label="Preset - Computer" arg-set="-p 4"/>
+    <option id="01F" _label="Preset - Slick" arg-set="-p 5"/>
+    <option id="01G" _label="Preset - Tasty" arg-set="-p 6"/>
+  </select>
+
+  <_description>
+Flying through a lattice.
+
+Note: Presets override all other settings. If you wish to customize the other options, make sure the preset option is set to "Preset - Custom".
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

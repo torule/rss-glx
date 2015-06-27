@@ -1,0 +1,76 @@
+.TH "RSS Other Screensaver" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+matrixview - seeing images in the matrix.
+.SH SYNOPSIS
+.B matrixview
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--images/-i \fIdirectory\fP]
+[\--scene_interval/-s \fInumber\fP]
+[\--matrix_interval/-m \fInumber\fP]
+[\--matrix_width/-X \fInumber\fP]
+[\--matrix_height/-Y \fInumber\fP]
+[\--contrast/-c \fInumber\fP]
+.SH DESCRIPTION
+Assimilation of Matrix GL by Nightradio <nightradio@knoppix.ru> (http://knoppix.ru/matrixgl.shtml)
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--images \fIdirectory\fP
+Directory to load images from. If omitted, Matrix related images built into the screensaver are used.
+.TP 8
+.B \--scene_interval \fInumber\fP
+How long an image stays in the matrix.  0 - 120.  Default: 5
+.TP 8
+.B \--matrix_interval \fInumber\fP
+How long do the normal matrix thing between scenes. Meaningless if --scene_interval is 0.  3 - 120.  Default: 5
+.TP 8
+.B \--matrix_width \fInumber\fP
+Horizontal matrix resolution.  40 - 320.  Default: 90
+.TP 8
+.B \--matrix_height \fInumber\fP
+Vertical matrix resolution.  30 - 240.  Default: 70
+.TP 8
+.B \--contrast \fInumber\fP
+Image contrast %.  0 - 100.  Default: 75
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2003 by Alex Zolotov and Tugrul Galatali.  
+
+MatrixView is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+MatrixView is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Alex Zolotov <nightradio@knoppix.ru> and Tugrul Galatali <tugrul@galatali.com>
+

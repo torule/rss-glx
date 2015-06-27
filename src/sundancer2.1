@@ -1,0 +1,79 @@
+.TH "RSS Other Screensaver" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+sundancer2 - rotating stack of quads.
+.SH SYNOPSIS
+.B sundancer2
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--quad_count/-q \fInumber\fP]
+[\--speed/-s \fInumber\fP]
+[\--transparency/-t \fInumber\fP]
+[\--foreground/-f \fInumber\fP]
+[\--background/-b \fInumber\fP]
+[\--reverse/-e]
+[\--no-reverse/-E]
+.SH DESCRIPTION
+Neat rotation effects from rotation and skewing stack of transparent squares.
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--quad_count \fInumber\fP
+Set number of stacked quads.  1 - 300.  Default: 150
+.TP 8
+.B \--speed \fInumber\fP
+Rotational speed.  1 - 40.  Default: 20
+.TP 8
+.B \--transparency \fInumber\fP
+Percentage of transparency.  1 - 100.  Default: 75
+.TP 8
+.B \--foreground \fInumber\fP
+Color for the top of the heap using hex color codes.  000000 - ffffff.  Default: ffff00
+.TP 8
+.B \--background \fInumber\fP
+Color for the bottom of the heap using hex color codes.  000000 - ffffff.  Default: ff0000
+.TP 8
+.B \--reverse
+Reverse rotation occasionally.  Default: False
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2002 by Dirk Songuer and Tugrul Galatali.  
+
+Sundancer2 is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+Sundancer2 is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Dirk Songuer <delax@sundancerinc.de> and Tugrul Galatali <tugrul@galatali.com>
+

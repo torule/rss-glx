@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="spirographx" _label="SpirographX">
+
+  <command arg="-r"/>
+
+  <number id="01" type="slider" arg="-d %"
+          _label="Line segments" _low-label="Less" _high-label="More"
+          low="10" high="100" default="45"/>
+
+  <number id="02" type="slider" arg="-i %"
+          _label="Change Interval" _low-label="Shorter" _high-label="Longer"
+          low="5" high="120" default="15"/>
+
+  <_description>
+Animated spirograph.
+
+Written by &lt;holmes at neatosoftware.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

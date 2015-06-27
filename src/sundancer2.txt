@@ -1,0 +1,68 @@
+Info from original Windows source.
+
+############################## Sundancer2:
+3#3##3##35##2##5#3              Saver[2]
+3##3#4#34#3##3                28.06.2002
+3##4#32                    Sundancer Inc.
+#3##                 www.sundancerinc.de
+3                  delax@sundancerinc.de
+
+
+6: Sundancer Inc. Saver[2] 2.1
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  welcome to the new screen saver from
+  Sundancer Inc. - Saver[2].
+
+  Saver[2] was completely rewritten so that
+  you now have a nice saver with a cool and
+  simple interface. all attributes of the
+  saver can easily be changed with just a
+  klick and some bashing on the keys.
+
+
+5: Installation
+   ^^^^^^^^^^^^
+  copy the files 'sundancer[2].scr' and   
+  'sundancer[2].ini' in your windows
+  directory (eg. 'c:\windows'). now the
+  saver should be in your screen saver list.
+
+
+4: Requirements
+   ^^^^^^^^^^^^
+  PC, Windows 95, 98, ME, NT4, 2000, XP
+  or some windows like that, 
+  OpenGL compatible gfx card.
+
+
+3: Attributes
+   ^^^^^^^^^^
+  the attributes should be pretty obvious
+  except the 'safe mode'. activate it if
+  you encounter problems under NT, 2000
+  or XP.
+
+
+2: Disclaimer
+   ^^^^^^^^^^
+  if something screws up and your machine
+  blows, you may blame microsoft but not us.
+  use this saver at your own risk!
+
+
+1: Making of
+   ^^^^^^^^^
+  the Sundancer Inc. Saver[2] was brought
+  to you by Darkdancer Funk. alias sdi
+  Darkside Division.
+
+  programming - dirk songuer aka
+  delax^sdi. questions or bug reports
+  should go to delax@sundancerinc.de
+
+  the source of this saver is free for
+  you to play around with. but my dear
+  c/c++ followers: this is fpc code.
+  no msvc can help you here.
+
+0: liftoff!

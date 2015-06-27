@@ -1,0 +1,78 @@
+.TH "Really Slick ScreenSavers" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+lorenz - Lorenz Attractor.
+.SH SYNOPSIS
+.B lorenz
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--num-points/-n \fInumber\fP]
+[\--num-satellites/-s \fInumber\fP]
+[\--camera-speed/-c \fInumber\fP]
+[\--camera-angle/-a \fInumber\fP]
+[\--line-width/-l \fInumber\fP]
+[\--line-width-sat/-w \fInumber\fP]
+[\--line-cutoff/-o \fInumber\fP]
+.SH DESCRIPTION
+Lorenz Attractor - visualization of the Lorenz Attractor fractal \- written by Sören Sonnenburg.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--lines \fInumber\fP
+Number of lines.  100 - 1000000.  Default: 100000
+.TP 8
+.B \--num-satellites \fInumber\fP
+Number of satellites.  0 - 50.  Default: 25
+.TP 8
+.B \--camera-speed \fInumber\fP
+Camera Speed.  0 - 100.  Default: 30
+.TP 8
+.B \--camera-angle \fInumber\fP
+Camera Angle.  5 - 179.  Default: 45
+.TP 8
+.B \--line-width \fInumber\fP
+Line width of Attractor.  1 - 100.  Default: 2
+.TP 8
+.B \--line-width-sat \fInumber\fP
+Line width of Satellites.  1 - 100.  Default: 16
+.TP 8
+.B \--line-cutoff \fInumber\fP
+Line Approximation Quality (Lower is better).  0 - 100.  Default: 20
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2009 by Sören Sonnenburg.  
+
+Euphoria is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 (or any later version).
+
+Euphoria is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Lorenz Attractor written by Sören Sonnenburg. Contact sonne@debian.org or visit http://sonnenburgs.de/soeren .

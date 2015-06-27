@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=biof
+Icon=preferences-desktop-screensaver
+X-KDE-ServiceTypes=ScreenSaver
+X-KDE-Category=OpenGL Screen Savers
+X-KDE-Type=OpenGL
+Type=Service
+Actions=Setup;InWindow;Root
+Name=Biof (GL)
+
+[Desktop Action Setup]
+Exec=kxsconfig biof
+Name=Setup...
+
+[Desktop Action InWindow]
+Exec=kxsrun biof -- -window-id %w
+Name=Display in specified window
+NoDisplay=true
+ 
+[Desktop Action Root]
+Exec=kxsrun biof -- --root
+Name=Display in root window
+NoDisplay=true

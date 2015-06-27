@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="feedback" _label="feedback">
+
+  <command arg="-r"/>
+
+  <boolean id="01" _label="Greyscale" arg-set="-g"/>
+
+  <number id="02" type="slider" arg="-p %"
+          _label="Color Period" _low-label="Faster" _high-label="Slower"
+          low="1" high="100" default="5"/>
+
+  <number id="03" type="slider" arg="-s %"
+          _label="Warping Change Speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="10"/>
+
+  <number id="04" type="slider" arg="-c %"
+          _label="Cell Density" _low-label="Less" _high-label="More"
+          low="0" high="6" default="3"/>
+
+  <number id="05" type="slider" arg="-t %"
+          _label="Texture Resolution" _low-label="Less" _high-label="More"
+          low="6" high="12" default="8"/>
+
+  <boolean id="06" _label="Warping Grid" arg-set="-i"/>
+
+  <_description>
+Stirring colors with a jiggling warp.
+
+Written by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

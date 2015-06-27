@@ -1,0 +1,12 @@
+Installation:
+        ./configure && make && sudo make install
+
+        Configure Options:
+                --disable-bzip2
+                        Don't use bzip2 to compress textures and audio clips
+                --disable-sound
+                        Don't compile in sound (only affects skyrocket)
+                --with-configdir
+                        Location of the XScreenSaver's config files
+                --with-kdessconfigdir
+                        Location of KDE's screensaver .desktop files

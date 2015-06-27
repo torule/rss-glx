@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screensaver name="lorenz" _label="Lorenz">
+
+  <command arg="-r"/>
+
+  <number id="01" type="spinbutton" arg="-n %"
+          _label="Number of Lines" low="100" high="1000000" default="100000"/>
+
+  <number id="02" type="spinbutton" arg="-s %"
+          _label="Number of Satellites" low="0" high="50" default="25"/>
+
+  <number id="03" type="slider" arg="-c %"
+          _label="Camera Speed" _low-label="Smaller" _high-label="Larger"
+          low="0" high="+100" default="30"/>
+
+  <number id="04" type="slider" arg="-a %"
+          _label="Camera Angle" low="5" high="179" default="45"/>
+
+  <number id="05" type="slider" arg="-l %"
+          _label="Line width of Attractor" _low-label="Thin" _high-label="Thick"
+          low="1" high="100" default="2"/>
+
+  <number id="06" type="slider" arg="-w %"
+          _label="Line width of Satellites" _low-label="Thin" _high-label="Thick"
+          low="1" high="100" default="16"/>
+
+  <number id="07" type="slider" arg="-o %"
+          _label="Line approximation quality" _low-label="Better" _high-label="Crude"
+          low="0" high="100" default="20"/>
+
+  <_description>
+  Lorenz Attractor written by Sören Sonnenburg. Contact sonne@debian.org or visit http://sonnenburgs.de/soeren .
+  </_description>
+</screensaver>

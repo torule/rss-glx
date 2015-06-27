@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="helios" _label="Helios">
+
+  <command arg="-r"/>
+
+  <number id="01" type="spinbutton" arg="-i %"
+          _label="Number of ions" low="0" high="30000" default="1500"/>
+
+  <number id="02" type="slider" arg="-s %"
+          _label="Ion size" _low-label="Smaller" _high-label="Larger"
+          low="1" high="100" default="10"/>
+
+  <number id="03" type="slider" arg="-e %"
+          _label="Number of emitters" _low-label="Less" _high-label="More"
+          low="1" high="10" default="3"/>
+
+  <number id="04" type="slider" arg="-a %"
+          _label="Number of attracters" _low-label="Less" _high-label="More"
+          low="1" high="10" default="3"/>
+
+  <number id="05" type="slider" arg="-S %"
+          _label="Animation speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="10"/>
+
+  <number id="06" type="slider" arg="-c %"
+          _label="Camera speed" _low-label="Slower" _high-label="Faster"
+          low="0" high="100" default="10"/>
+
+  <number id="07" type="slider" arg="-b %"
+          _label="Motion blur" _low-label="Less" _high-label="More"
+          low="0" high="100" default="10"/>
+
+  <boolean id="08" _label="Helion surfaces" arg-unset="-U"/>
+  <boolean id="09" _label="Wireframe" arg-set="-w"/>
+
+  <_description>
+Attraction/repulsion particle effects and some smooth implicit surfaces.
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

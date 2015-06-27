@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="fieldlines" _label="Fieldlines">
+
+  <command arg="-r"/>
+
+  <number id="01" type="spinbutton" arg="-i %"
+          _label="Ions" low="1" high="100" default="4"/>
+
+  <number id="02" type="spinbutton" arg="-s %"
+          _label="Step length along lines" low="1" high="100" default="15"/>
+
+  <number id="03" type="spinbutton" arg="-m %"
+          _label="Max number of steps" low="1" high="1000" default="100"/>
+
+  <number id="04" type="slider" arg="-w %"
+          _label="Line width" _low-label="Smaller" _high-label="Larger"
+          low="1" high="100" default="30"/>
+
+  <number id="05" type="slider" arg="-S %"
+          _label="Speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="10"/>
+
+  <boolean id="06" _label="Constant line width" arg-set="-c"/>
+  <boolean id="07" _label="Electric" arg-set="-w"/>
+
+  <_description>
+Simulation of the electric field lines between charged particles.
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

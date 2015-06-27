@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="hufo_smoke" _label="Hufo's Smoke">
+
+  <command arg="-r"/>
+
+  <string id="01" _label="Foreground Color" arg="-f %" />
+
+  <string id="02" _label="Background Color" arg="-b %" />
+
+  <_description>
+Smoke particles billowing through a 3D warping grid.
+
+Specify colors using hex color codes (ie, ff0000, 00ff00, 0000ff for red, green and blue.)
+
+Written by Jeremie Allard &lt;hufo at planet-d.net&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

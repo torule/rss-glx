@@ -1,0 +1,318 @@
+******************************* Version 0.9.1  *********************************
+
+	Added port of Pixel City, originally by Shamus Young,
+http://code.google.com/p/pixelcity/
+	Replaced methods deprecated by ImageMagick.
+
+******************************* Version 0.9.0  *********************************
+
+	Added port of drempels, originally by Ryan M. Geiss,
+http://www.geisswerks.com/about_drempels.html
+	Added new saver feedback by Tugrul Galatali.
+	Added support for DPMS to idle the saver when the display isn't on.
+	Fixed brown paper bag bug in hyperspace.
+	Added two new presets to flocks inspired by Matt Richard's Wavy Gravy on
+openprocessing.org
+	Tweaked hufo_smoke to avoid flat flame effect.
+	Fixed unknown argument segfault in lattice.
+	Switched matrixview's main character array to vertex arrays, which helps
+significantly on older nVidia hardware.
+	hyperspace and drempels have command line arguments to disable use of
+shaders in case they behave unexpectedly.
+	Minor changes to fix builds on other platforms.
+
+******************************* Version 0.8.3 *********************************
+
+	New screen saver Lorenz contributed by Soeren Sonnenburg <sonne@debian.org>
+	Fix for SF #2673397 by changing =='s to >='s in widthChange update logic,
+otherwise non-sense values for interpolation would wreak havoc. Also changed for
+xyzChange.
+
+******************************* Version 0.8.2 *********************************
+
+	Limit frame rate to vertical refresh by default if compiled with GLEW
+and GLX_SGI_swap_control is available. Otherwise, maxfps set to 30.
+	--nice eliminated and made default. nanosleep/usleep are much better 
+behaved these days.
+	spirographx modified to use vertex arrays and GNU extension sincosf if
+available, dropping CPU usage significantly.
+	Minor updates to correct issues noted by newer compilers.
+	--disable-debug is now the default in configure.
+
+******************************* Version 0.8.1 *********************************
+
+	Pulled in vroot.h patch from Ari Pollak's Debian package.
+	Added missing #include <assert.h> to hyperspace.cpp
+	Image loading in matrixview was hanging for whatever reason,
+		rewritten with the new Magick Wand interface.
+	ImageMagick now required.
+	timeval to double conversion now fixed with an explicit cast of tv_sec
+		to double.
+	Fixed automake files to use CLEANFILES
+	Dropped SSE/3dnow stuff
+	Fixed hyperspace.xml typo in dist_kdessconfig_DATA
+
+******************************* Version 0.8.0 *********************************
+
+	Rough sync against new Windows release, rssavers 0.1
+		Except for skyrocket
+		Added new saver Hyperspace
+
+******************************* Version 0.7.6 *********************************
+
+	Fix to matrixview.c where the body of a thread was accidentally left as a
+subfunction of a function that exits while the thread is still alive.
+
+	Added an autoconf check for ExportImagePixels since it was very recently
+added (5.5.7).
+
+******************************* Version 0.7.5 *********************************
+
+	Removed multiline strings that are no longer supported by gcc 3.3.
+
+	Added spirographx, a port of an OSX app/screensaver SpirographX by 
+Holmes Futrell <holmes@neatosoftware.com>.
+	http://homepage.mac.com/solidmag/spiro/
+
+	Added matrixview, based on Alex Zolotov's Matrix GL. Hacked in external 
+image loading and ability to modify the resolution of the matrix.
+
+******************************* Version 0.7.4 *********************************
+
+	Fixed bug in lattice when the variable passed to acos would be slightly
+greater than 1, causing cascading nan's that made the program useless.
+
+	Explicitly clearing buffers to avoid garbage in blurring modes.
+
+	Lots of stupid little bug fixes.
+
+******************************* Version 0.7.3 *********************************
+
+	Added trails and blur options to flocks. Also added presets to spruce
+things up in combination with random preset selection when running 
+unconfigured.
+
+	Fixed another cpu detection bug, damn off by one errors :)
+
+	Added support for decimal integer arguments to -window-id. 
+
+	Added .desktop files for preliminary support of KDE. Not sure where
+the default directory is, but if it isn't specified by --with-kdessconfigdir,
+the configure script checks for the existence of:
+
+/usr/share/applnk/System/ScreenSavers
+
+******************************* Version 0.7.2 *********************************
+
+	Fixed bug in cpu detection code.
+
+	Fixed a bug that included audio data in skyrocket when OpenAL wasn't 
+found.
+
+******************************* Version 0.7.1 *********************************
+
+	Fixed a typo crashing skyrocket on big endian machines. Spotted by
+Michel Danzer.
+
+	Two new savers: biof and busyspheres.
+
+	New texture smooth for colorfire.
+
+	Fixed a bug that left screensavers running after they should have quit.
+
+	Replaced compile time cpu feature detection with runtime detection.
+
+******************************* Version 0.7.0 *********************************
+
+	Extracted all binary data from the source into binary files. The
+source distribution has gotten notably smaller as a result. 
+
+	The binary files are now converted during compilation to significantly 
+larger source files with escaping instead of base64 type inefficient strings.
+The resulting executables have no unnecessary bloat.
+
+	If the bzip2 library is detected on the system, it is used to compress
+the binary data before conversion.
+
+	Added --disable-bzip2 flag to configure. This is to give up space in
+order to avoid a delay while decompressing, which is noticeable in skyrocket
+that has about 3MB of compressed textures and audio.
+
+	Added --disable-sound flag to configure. This chops off about 3.3MB
+(before compression) of audio from skyrocket and any runtime overhead
+associated with sound. Useful if you intend to keep passing volume = 0 to
+skyrocket.
+
+	Added SSE/3DNow optimized code that gives euphoria a nice 10% boost
+on my P4, probably a bit more on an Athlon but I haven't had recent console 
+access to one. I'm new at this, so there is probably room for more improvement,
+but this is probably good news to those that use euphoria for wallpaper :)
+	--disable-(sse|3dnow) nukes the code if you wish to build all 
+encompassing binaries.
+
+	Added xscreensaver-demo config files provided by Curtis Haas 
+<WonderBoy5150@hotmail.com>.
+
+	More intelligent library linking via a patch provided by Alan Swanson
+<swanson@uklinux.net>.
+
+******************************* Version 0.6.8 *********************************
+
+	Terry Walsh (the original author) pointed out a bug causing the camera
+not to rotate in Lattice.
+
+	Fixes to make Sun's compilers content.
+
+	Removed original rate limiter in plasma that caused banding when
+running full screen on my machine (dual 1.7Ghz P4 Xeon w/ GF4 Ti4400).
+
+	Some other plasma cleanups.
+
+	Reorganized much of driver.c
+
+	Added hack_cleanup to handle things that might not automatically be
+freed on exit. Currently just deleting GL lists that might help some people
+using DRI.
+
+	Added a signal handler to deal with exiting in fullscreen mode by 
+hitting CTRL-C and some other common signals.
+
+******************************* Version 0.6.7 *********************************
+
+	Fixed a relatively harmless bug where the smoke textures in SkyRocket
+were missing 48 bytes.
+
+	Rearranged command line argument processing to avoid unportable
+rescanning of argv with getopt.
+
+	Now dynamically allocating the largest of the static arrays within
+SkyRocket's initWorld function to fix a SIGSEGV on FreeBSD -current.
+
+	No longer relying on RAND_MAX, which is not 2^31 - 1 on Solaris 9 w/
+gcc 3.2 from sunfreeware.com.
+
+	Made autoconf a bit smarter to find openal on FreeBSD.
+
+	Stopped including unistd.h if including getopt.h to avoid a compilation
+error on FreeBSD w/ the GNU getopt port installed.
+
+	Fixed garbled sound on big endian machines by swapping pairs of bytes
+in the embedded audio samples.
+
+	Now intercepting WM_DELETE_WINDOW and exiting properly, I think :)
+
+******************************* Version 0.6.6 *********************************
+
+	The final Really Slick Screensaver has been ported, SkyRocket! :)
+
+	Parameter randomizing on certain screensavers to spruce things up a bit.
+
+	--nice :) For you number crunchers, --nice uses select() to idle
+between frames. It also uses select() idling in the fps limiting delay loop for
+--maxfps, but don't expect to get exactly, or anywhere near, the specified fps.
+
+	Before you say anything, I know about usleep and nanosleep. Its even in
+the code, just commented out. select() seems to just do a better job, for
+example w/ -x 128, I get 50/50/100fps using usleep/nanosleep/select in the fps
+limiting delay loop.
+
+	Some flocks options were changed to facilitate having --nice/-n.
+
+	I've decided to start scouring the net for cool OpenGL saver material
+originally written for Windows. The first four I've found, loved and ported
+are: 
+
+	colorfire
+	hufo_smoke
+	hufo_tunnel
+	sundancer2
+
+	If you spot any with source, shoot me a link. If the source isn't 
+available, try politely asking for it :)
+
+******************************* Version 0.6.1 *********************************
+
+	All the savers should now include both time.h and sys/time.h...
+originally I had opted to only include one because of the following ominous
+sounding check in autoconf:
+
+checking whether time.h and sys/time.h may both be included... yes
+
+	But some installations (w/ gcc 2.95.x for example) need both, and I see
+xscreensaver, which compiles on every platform I would concern myself with, 
+includes both as well.
+
+	Mild tweaks to configure.in and #includes to support FreeBSD.
+
+******************************* Version 0.6.0 *********************************
+
+	Threw in my first attempt at autoconf.
+
+	Removed dependency on GNU getopt_long. Every option should have a
+semi-logical short option that is always available.
+
+	Built successfully on a Solaris 8 machine w/ gcc 3.2. It was a shell
+server @NYU... if anyone on a desktop SPARC can actually run these before I 
+get Solaris back on my Ultra 60, drop me a line.
+
+	Included a tweaked version of debian packaging rules contributed by 
+Serge Koenigsmann <serge@koenigsmann.de>
+
+	Support -window-id for previewing in xscreensaver-demo.
+
+	All 9 programs now have basic man pages reflecting the information on
+the Windows config panels for these screensavers.
+
+	Pressing f in window mode now outputs fps to stdout.
+
+	--maxfps/-x <arg> now sets maximum fps to <arg>. This helps flux, which
+just seemed to be running too fast on my desktop to have its effect. I'm using
+busy waiting for now since I am not aware of a way of yielding control without
+things getting choppy. nanosleep doesn't quite deliver on Linux/i386.
+
+******************************* Version 0.5.1 *********************************
+
+	Added Q/q/^C in addition to ESC to quit in windowed mode per request.
+
+	Added -h as an alias for --help per request.
+
+	Added vroot.h to driver.c to fix problem with xscreensaver reported by 
+	ZlatkO on freshmeat.net
+
+	A few minor bug fixes and changes.
+
+******************************* Version 0.5.0 *********************************
+
+06/25/02 was a momentous day in Unix screensaver history. At least I think so. 
+The Really Slick Screensavers were open sourced under GPL. 
+
+Included in this package (version 0.5) are ports of the following 9 screen
+savers:
+
+	helios
+	euphoria
+	solarwinds
+	lattice
+	flux
+	plasma
+	fieldlines
+	flocks
+	cyclone
+
+to GLX. Euphoria and Lattice had been ported to C for inclusion with
+XScreenSaver, which is entirely C, but licensing issues kept that from 
+happening. So, after being asked by a few people, I created this standalone 
+package. The other 7 screensavers were ported relatively quickly since I could
+leave them as C++.
+
+This release (0.5) can be considered an early beta port. I've never released
+a complete package before, so for now its just static makefiles. They 
+sucessfully build this package on a Debian machine tracking unstable.
+
+The source code itself is a bit disorganized, since, in the author's words,
+they were written more as art projects than programming projects. I'll be
+cleaning it up in later releases, especially if I get reports on portability
+to non-x86 or non-Linux OSes.
+
+Tugrul Galatali <tugrul@galatali.com>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="plasma" _label="Plasma">
+
+  <command arg="-r"/>
+
+  <number id="01" type="slider" arg="-z %"
+          _label="Magnification" _low-label="Smaller" _high-label="Larger"
+          low="1" high="100" default="10"/>
+
+  <number id="02" type="slider" arg="-f %"
+          _label="Focus" _low-label="Less" _high-label="More"
+          low="1" high="100" default="30"/>
+
+  <number id="03" type="slider" arg="-s %"
+          _label="Speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="20"/>
+
+  <number id="04" type="slider" arg="-R %"
+          _label="Resolution" _low-label="Less" _high-label="More"
+          low="1" high="100" default="25"/>
+
+  <_description>
+Colorful flowing plasma.
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

@@ -1,0 +1,78 @@
+.TH "RSS Other Screensaver" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+biof - rotating stack of quads.
+.SH SYNOPSIS
+.B biof
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--preset/-P \fInumber\fP]
+[\--lines/-l \fInumber\fP]
+[\--points/-p \fInumber\fP]
+[\--offangle]
+.SH DESCRIPTION
+This is an attempt to recreate some of the work of William Latham. Take a look at the program 'organic art' at this site (http://www.artworks.co.uk).
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--preset \fInumber\fP
+.Ds
+1 - Triangles (--triangles)
+2 - Spheres (--spheres)
+3 - Big Spheres (--bigspheres)
+4 - Points (--points)
+5 - Lightmap (--lightmap)
+.De
+
+Sets geometry type and resets --lines and --points to the defaults from the original program.  1 - 5.  Default: 1
+.TP 8
+.B \--lines \fInumber\fP
+Set number of lines ("arms").  1 - 1024.
+.TP 8
+.B \--points \fInumber\fP
+Set number of points per line.  1 - 4096.
+.TP 8
+.B \--offangle
+Interesting 45 degree view instead of default head on view.
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2002 by <hk@dgmr.nl> and Tugrul Galatali.  
+
+BioF is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+BioF is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+<hk@dgmr.nl> and Tugrul Galatali <tugrul@galatali.com>
+

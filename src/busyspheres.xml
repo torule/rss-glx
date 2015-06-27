@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="busyspheres" _label="Busy Spheres">
+
+  <command arg="-r"/>
+
+  <_description>
+Spheres made of dancing particles.
+
+Written by Ronald Hordijk &lt;hk at dgmr.nl&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

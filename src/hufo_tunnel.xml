@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="hufo_tunnel" _label="Hufo's Tunnel">
+
+  <command arg="-r"/>
+
+  <number id="01" type="slider" arg="-c %"
+          _label="Speed" _low-label="Smoother" _high-label="Faster"
+          low="0" high="3" default="0"/>
+
+  <select id="02">
+    <option id="02A" _label="Material - Default"/>
+    <option id="02B" _label="Material - none" arg-set="-t 0"/>
+    <option id="02C" _label="Material - Swirl" arg-set="-t 1"/>
+    <option id="02D" _label="Material - Marble" arg-set="-t 2"/>
+  </select>
+
+  <boolean id="03" _label="Wireframe" arg-set="-w"/>
+  <boolean id="04" _label="Sinusoide" arg-set="-s"/>
+
+  <_description>
+Flying through tunnels with various qualities.
+
+Written by Jeremie Allard &lt;hufo at planet-d.net&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

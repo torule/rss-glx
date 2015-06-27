@@ -1,0 +1,62 @@
+.TH "RSS Other Screensaver" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+spirographx - animated spirographs
+.SH SYNOPSIS
+.B spirographx
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--detail/-d \fInumber\fP]
+[\--interval/-i \fInumber\fP]
+.SH DESCRIPTION
+Port of SpirographX by Holmes Futrell <holmes@neatosoftware.com> (http://homepage.mac.com/solidmag/spiro/).
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--detail \fInumber\fP
+Number of line segments.  10 - 100.  Default: 45
+.TP 8
+.B \--interval \fInumber\fP
+Seconds between random settings change.  5 - 120.  Default: 15
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2003 by Holmes Futrell and Tugrul Galatali.  
+
+SpirographX is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+SpirographX is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Holmes Futrell <holmes@neatosoftware.com> and Tugrul Galatali <tugrul@galatali.com>
+

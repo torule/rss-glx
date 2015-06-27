@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="pixelcity" _label="Pixel City">
+
+  <command arg="-r"/>
+
+  <select id="01">
+    <option id="01A" _label="Effect Bloom"/>
+    <option id="01B" _label="Effect Bloom Radial" arg-set="-B"/>
+    <option id="01C" _label="Effect Glass" arg-set="-g"/>
+    <option id="01D" _label="Effect Color Cycle" arg-set="-c"/>
+    <option id="01E" _label="Effect None" arg-set="-n"/>
+  </select>
+
+  <boolean id="02" _label="Wire frame" arg-set="-w"/>
+
+  <boolean id="03" _label="No fog" arg-set="-F"/>
+
+  <boolean id="04" _label="Letter box" arg-set="-l"/>
+
+  <_description>
+Procedural city fly through.
+
+Written by Shamus Young &lt;shamus -at- shamusyoung dot com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="hufo_tunnel" _label="Hufo's Tunnel">
+
+  <command arg="-r"/>
+
+  <select id="01">
+    <option id="01A" _label="Material - Default"/>
+    <option id="01B" _label="Material - none" arg-set="-t 0"/>
+    <option id="01C" _label="Material - Smoke" arg-set="-t 1"/>
+    <option id="01D" _label="Material - Ripples" arg-set="-t 2"/>
+  </select>
+
+  <_description>
+Colorful pulsating orb.
+
+Written by Andreas Gustafsson &lt;sdw at lysator.liu.se&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

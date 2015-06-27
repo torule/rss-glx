@@ -1,0 +1,122 @@
+.TH "Really Slick ScreenSavers" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+flux - flux fields and stuff.
+.SH SYNOPSIS
+.B flux
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--fluxes/-f \fInumber\fP]
+[\--particles/-p \fInumber\fP]
+[\--trail/-t \fInumber\fP]
+[\--geometry/-g \fInumber\fP]
+[\--size/-s \fInumber\fP]
+[\--complexity/-c \fInumber\fP]
+[\--randomize/-R \fInumber\fP]
+[\--expansion/-e \fInumber\fP]
+[\--rotation/-o \fInumber\fP]
+[\--wind/-w \fInumber\fP]
+[\--instability/-i \fInumber\fP]
+[\--blur/-b \fInumber\fP]
+[\--preset/-P \fInumber\fP]
+.SH DESCRIPTION
+From Terry Walsh (\fIhttp://reallyslick.com\fP):
+"This screensaver rocks."
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--fluxes \fInumber\fP
+Number of flux fields.  1 - 100.  Default: 1
+.TP 8
+.B \--particles \fInumber\fP
+Particles per field.  1 - 1000.  Default: 20
+.TP 8
+.B \--trail \fInumber\fP
+Trail length of particles.  3 - 10000.  Default: 40
+.TP 8
+.B \--geometry \fInumber\fP
+.Ds
+0 - Points (--points)
+1 - Spheres (--spheres)
+2 - Lights (--lights)
+.De
+
+Type of geometry.  0 - 2.  Default: 2
+.TP 8
+.B \--size \fInumber\fP
+Particle Size.  1 - 100.  Default: 15
+.TP 8
+.B \--complexity \fInumber\fP
+Sphere Complexity.  0 - 100.  Default: 3
+.TP 8
+.B \--randomize \fInumber\fP
+Frequency of randomization.  0 - 100.  Default: 0
+.TP 8
+.B \--expansion \fInumber\fP
+Expansion rate.  0 - 100.  Default: 40
+.TP 8
+.B \--rotation \fInumber\fP
+Rotation rate.  0 - 100.  Default: 30
+.TP 8
+.B \--wind \fInumber\fP
+Crosswind speed.  0 - 100.  Default: 20
+.TP 8
+.B \--instability \fInumber\fP
+Instability.  0 - 100.  Default: 20
+.TP 8
+.B \--blur \fInumber\fP
+Motion Blur.  0 - 100.  Default: 0
+.TP 8
+.B \--preset \fInumber\fP
+.Ds
+1 - Regular (--regular)
+2 - Hypnotic (--hypnotic)
+3 - Insane (--insane)
+4 - Sparklers (--sparklers)
+5 - Paradigm (--paradigm)
+6 - Fusion (--fusion)
+.De
+
+Presets that override all options that come before it on the command line.  1 - 6.  Default: 1
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2002 by Terry Walsh and Tugrul Galatali.  
+
+Flux is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+Flux is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Terry Walsh and Tugrul Galatali <tugrul@galatali.com>
+

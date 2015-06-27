@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=flocks
+Icon=preferences-desktop-screensaver
+X-KDE-ServiceTypes=ScreenSaver
+X-KDE-Category=OpenGL Screen Savers
+X-KDE-Type=OpenGL
+Type=Service
+Actions=Setup;InWindow;Root
+Name=Flocks (GL)
+
+[Desktop Action Setup]
+Exec=kxsconfig flocks
+Name=Setup...
+
+[Desktop Action InWindow]
+Exec=kxsrun flocks -- -window-id %w
+Name=Display in specified window
+NoDisplay=true
+ 
+[Desktop Action Root]
+Exec=kxsrun flocks -- --root
+Name=Display in root window
+NoDisplay=true

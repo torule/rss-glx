@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="hyperspace" _label="Hyperspace">
+
+  <command arg="-r"/>
+
+  <number id="01" type="slider" arg="-s %"
+          _label="Speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="100" default="10"/>
+
+  <number id="02" type="slider" arg="-S %"
+          _label="Stars" _low-label="Less" _high-label="More"
+          low="0" high="10000" default="1000"/>
+
+  <number id="03" type="slider" arg="-z %"
+          _label="Star Size" _low-label="Smaller" _high-label="Larger"
+          low="1" high="100" default="10"/>
+
+  <number id="04" type="slider" arg="-R %"
+          _label="Resolution" _low-label="Lower" _high-label="Higher"
+          low="4" high="20" default="10"/>
+
+  <number id="05" type="slider" arg="-d %"
+          _label="Depth" _low-label="Shallow" _high-label="Deep"
+          low="1" high="10" default="5"/>
+
+  <number id="06" type="slider" arg="-f %"
+          _label="Field of view" _low-label="Narrow" _high-label="Wide"
+          low="10" high="150" default="10"/>
+
+  <_description>
+Flying through hyper space.
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

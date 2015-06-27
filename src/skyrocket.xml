@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="skyrocket" _label="Skyrocket">
+
+  <command arg="-r"/>
+
+  <number id="01" type="slider" arg="-m %"
+          _label="Maximum number of rockets" _low-label="Less" _high-label="More"
+          low="1" high="100" default="8"/>
+
+  <number id="02" type="slider" arg="-s %"
+          _label="Smoke lifespan (in seconds)" _low-label="Shorter" _high-label="Longer"
+          low="0" high="60"  default="5"/>
+
+  <number id="03" type="slider" arg="-S %"
+          _label="Amount of smoke in explosions" _low-label="Less" _high-label="More"
+          low="0" high="100"  default="0"/>
+
+  <number id="04" type="slider" arg="-w %"
+          _label="Wind speed" _low-label="Smaller" _high-label="Larger"
+          low="0" high="100" default="20"/>
+
+  <number id="05" type="slider" arg="-a %"
+          _label="Ambient light" _low-label="Less" _high-label="More"
+          low="0" high="100" default="10"/>
+
+  <number id="06" type="slider" arg="-d %"
+          _label="Star density" _low-label="Less" _high-label="More"
+          low="0" high="100" default="20"/>
+
+  <number id="07" type="slider" arg="-f %"
+          _label="Lens flare brightness" _low-label="Less" _high-label="More"
+          low="0" high="100" default="20"/>
+
+  <number id="08" type="slider" arg="-g %"
+          _label="Moon glow brightness" _low-label="Less" _high-label="More"
+          low="0" high="100" default="20"/>
+
+  <number id="09" type="slider" arg="-v %"
+          _label="Sound effects volume" _low-label="Lower" _high-label="Higher"
+          low="0" high="100" default="100"/>
+
+  <hgroup>
+    <boolean id="10" _label="Moon" arg-unset="-O"/>
+    <boolean id="11" _label="Clouds" arg-unset="-C"/>
+  </hgroup>
+  <hgroup>
+    <boolean id="12" _label="Illumination" arg-unset="-I"/>
+    <boolean id="13" _label="Earth" arg-unset="-E"/>
+  </hgroup>
+
+  <_description>
+Fireworks show.
+
+Written by Terry Welsh &lt;mogumbo at totalmail.com&gt;.
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+Config Files by Curtis Haas.
+  </_description>
+</screensaver>

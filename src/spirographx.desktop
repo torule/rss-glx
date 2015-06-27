@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=spirographx
+Icon=preferences-desktop-screensaver
+X-KDE-ServiceTypes=ScreenSaver
+X-KDE-Category=OpenGL Screen Savers
+X-KDE-Type=OpenGL
+Type=Service
+Actions=Setup;InWindow;Root
+Name=SpirographX (GL)
+
+[Desktop Action Setup]
+Exec=kxsconfig spirographx
+Name=Setup...
+
+[Desktop Action InWindow]
+Exec=kxsrun spirographx -- -window-id %w
+Name=Display in specified window
+NoDisplay=true
+ 
+[Desktop Action Root]
+Exec=kxsrun spirographx -- --root
+Name=Display in root window
+NoDisplay=true

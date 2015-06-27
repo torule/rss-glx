@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="sundancer2" _label="Sundancer2">
+
+  <command arg="-r"/>
+
+  <number id="01" type="spinbutton" arg="-q %"
+          _label="Quad Count" low="1" high="300" default="150"/>
+
+  <number id="02" type="slider" arg="-s %"
+          _label="Speed" _low-label="Slower" _high-label="Faster"
+          low="1" high="40" default="20"/>
+
+  <number id="03" type="slider" arg="-t %"
+          _label="Transparency" _low-label="Transparent" _high-label="Solid"
+          low="1" high="100" default="75"/>
+
+  <string id="04" _label="Foreground Color" arg="-f %" />
+
+  <string id="05" _label="Background Color" arg="-b %" />
+
+  <boolean id="06" _label="Reverse rotation occasionally" arg-set="-e"/>
+
+  <_description>
+Rotating stack of quads.
+
+Specify colors using hex color codes (ie, ff0000, 00ff00, 0000ff for red, green and blue.)
+
+Written by Dirk Songuer &lt;delax at sundancerinc.de&gt;
+Ported to Linux by Tugrul Galatali - &lt;http://rss-glx.sourceforge.net/&gt;.
+  </_description>
+</screensaver>

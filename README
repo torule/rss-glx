@@ -1,0 +1,8 @@
+Requirements: 
+	(1) Recent gcc/g++ (2.95.x, 3.x).
+	(2) X11+GLX.
+	(3) ImageMagick >6.4
+	(4) OPTIONAL: OpenAL for sound. (skyrocket)
+	(5) OPTIONAL: pthreads for smoother image loading. (matrixview, drempels)
+	(6) OPTIONAL: GLEW for vertical refresh (all) and shaders (hyperspace).
+	(7) OPTIONAL: OpenGL Character Renderer (like QuesoGLC) for text rendering (pixelcity).

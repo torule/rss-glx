@@ -1,0 +1,127 @@
+.TH "Really Slick ScreenSavers" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+lattice - linked rings.
+.SH SYNOPSIS
+.B lattice
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--preset/-p \fInumber\fP]
+[\--longitude/-l \fInumber\fP]
+[\--latitude/-L \fInumber\fP]
+[\--thick/-t \fInumber\fP]
+[\--density/-d \fInumber\fP]
+[\--drawdepth/-D \fInumber\fP]
+[\--fov/-o \fInumber\fP]
+[\--pathrand/-P \fInumber\fP]
+[\--speed/-e \fInumber\fP]
+[\--texture/-T \fInumber\fP]
+[\--smooth/-s]
+[\--no-smooth/-S]
+[\--fog/-f]
+[\--no-fog/-F]
+.SH DESCRIPTION
+From Terry Walsh (\fIhttp://reallyslick.com\fP):
+"Fly through an endless world of linked rings. You can choose from several different textures for the rings and alter the comlexity of the lattice structure."
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--preset \fInumber\fP
+.Ds
+1 - Regular (--regular)
+2 - Chainmail (--chainmail)
+3 - Brass Mesh (--brassmesh)
+4 - Computer (--computer)
+5 - Slick (--slick)
+6 - Tasty (--tasty)
+.De
+
+Presets that override all options that come before it on the command line.  1 - 6.  Default: 1
+.TP 8
+.B \--longitude \fInumber\fP
+Longitudinal divisions of tori.  4 - 100.  Default: 16
+.TP 8
+.B \--latitude \fInumber\fP
+Latitudinal divisions of tori.  2 - 100.  Default: 8
+.TP 8
+.B \--thick \fInumber\fP
+Thickness of tori.  1 - 100.  Default: 50
+.TP 8
+.B \--density \fInumber\fP
+Density.  1 - 100.  Default: 50
+.TP 8
+.B \--drawdepth \fInumber\fP
+Depth.  1 - 8.   Default: 4
+.TP 8
+.B \--fov \fInumber\fP
+Field of view.  10 - 150.   Default: 90
+.TP 8
+.B \--pathrand \fInumber\fP
+Randomness of camera path.  1 - 10.   Default: 7
+.TP 8
+.B \--speed \fInumber\fP
+Speed.  1 - 100.   Default: 10
+.TP 8
+.B \--texture \fInumber\fP
+.Ds
+0 - None
+1 - Industrial (--industrial)
+2 - Crystal (--crystal)
+3 - Chrome (--chrome)
+4 - Brass (--brass)
+5 - Shiny (--shiny)
+6 - Ghostly (--ghostly)
+7 - Circuits (--circuits)
+8 - Doughnuts (--doughnuts)
+9 - random
+.De
+
+Default: 0
+.TP 8
+.B \--smooth
+Smooth surfaces.
+.TP 8
+.B \--fog
+Enable fog.
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2002 by Terry Walsh and Tugrul Galatali.
+
+Lattice is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+Lattice is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Terry Walsh and Tugrul Galatali <tugrul@galatali.com>
+

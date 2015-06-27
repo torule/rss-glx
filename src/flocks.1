@@ -1,0 +1,117 @@
+.TH "Really Slick ScreenSavers" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+flocks - floating wisps.
+.SH SYNOPSIS
+.B flocks
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--preset/-p \fInumber\fP]
+[\--leaders/-l \fInumber\fP]
+[\--followers/-f \fInumber\fP]
+[\--geometry/-g]
+[\--no-geometry/-G]
+[\--size/-i \fInumber\fP]
+[\--complexity/-o \fInumber\fP]
+[\--speed/-s \fInumber\fP]
+[\--stretch/-S \fInumber\fP]
+[\--colorfadespeed/-O \fInumber\fP]
+[\--chromatek/-k]
+[\--no-chromatek/-K]
+[\--connections/-c]
+[\--no-connections/-C]
+[\--traillength/-t \fInumber\fP]
+[\--blur/-b \fInumber\fP]
+.SH DESCRIPTION
+From Terry Walsh (\fIhttp://reallyslick.com\fP):
+"Here's a 3D variation on a favorite old theme. Try it out with Chromatek's ChromaDepth glasses for a cool 3D effect."
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--preset \fInumber\fP
+.Ds
+1 - Regular (--regular)
+2 - Trails (--trails)
+3 - Blurred Trails (--blurt)
+4 - Blurred Connections (--blurc)
+.De
+
+Presets that override all options that come before it on the command line.  1 - 4.  Default: 1
+.TP 8
+.B \--leaders \fInumber\fP
+Number of leaders.  1 - 100.  Default: 4
+.TP 8
+.B \--followers \fInumber\fP
+Number of followers.  0 - 10000.  Default: 400
+.TP 8
+.B \--geometry
+Draw blobs instead of dots.  Default: True
+.TP 8
+.B \--size \fInumber\fP
+Bug size.  1 - 100.  Default: 10
+.TP 8
+.B \--complexity \fInumber\fP
+Blob complexity.  1 - 10.  Default: 1
+.TP 8
+.B \--speed \fInumber\fP
+Speed.  1 - 100.  Default: 15
+.TP 8
+.B \--stretch \fInumber\fP
+Stretch.  0 - 100.  Default: 20
+.TP 8
+.B \--colorfadespeed \fInumber\fP
+Color fade speed.  0 - 100.  Default: 15
+.TP 8
+.B \--chromatek
+ChromaDepth glasses.  Default: False
+.TP 8
+.B \--connections
+Show connections.  Default: False
+.TP 8
+.B \--traillength \fInumber\fP
+Trail length.  0 - 250.  Default: 0
+.TP 8
+.B \--blur \fInumber\fP
+Motion Blur.  0 - 100.  Default: 0
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2002 by Terry Walsh and Tugrul Galatali.  
+
+Flocks is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+Flocks is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Terry Walsh and Tugrul Galatali <tugrul@galatali.com>
+

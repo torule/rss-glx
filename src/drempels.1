@@ -1,0 +1,95 @@
+.TH "Really Slick ScreenSavers" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+drempels - Hallucinatory desktop enhancer.
+.SH SYNOPSIS
+.B drempels
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--blur/-b \fInumber\fP]
+[\--speed/-s \fInumber\fP]
+[\--scale/-S \fInumber\fP]
+[\--cells/-c \fInumber\fP]
+[\--cellresolution/-R \fInumber\fP]
+[\--images/-i \fIdirectory\fP]
+[\--texinterval/-I \fInumber\fP]
+[\--texfadeinterval/-f \fInumber\fP]
+[\--gentexsize/-g \fInumber\fP]
+[\--no-shader/-H]
+.SH DESCRIPTION
+From Ryan M. Geiss (\fIhttp://www.geisswerks.com/about_drempels.html\fP):
+"A hallucinatory desktop enhancer - bring your wallpaper to life with graceful, swirling imagery. Runs beautifully as animated wallpaper, or as a screensaver."
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--blur \fInumber\fP
+Blurring between frames.  0 - 10.  Default: 7
+.TP 8
+.B \--speed \fInumber\fP
+Speed of flow, bigger is faster.  0 - 20.  Default: 10
+.TP 8
+.B \--scale \fInumber\fP
+Scale of flow, bigger is zoomed in.  0 - 20.  Default: 10
+.TP 8
+.B \--cells \fInumber\fP
+Number of cells (i.e. control points) in width/height in powers of two.  4 - 8.  Default: 4
+.TP 8
+.B \--cellresolution \fInumber\fP
+Resolution of each cell in powers of two.  4 - 8.  Default: 4
+.TP 8
+.B \--images \fIdirectory\fP
+Cycle through the images in the specified directory.
+.TP 8
+.B \--texinterval \fInumber\fP
+Seconds to dwell on each texture.  1 - 3600.  Default: 10
+.TP 8
+.B \--texfadeinterval \fInumber\fP
+Fade time between subsequent textures, in tenths of second.  1 - 100.  Default: 10
+.TP 8
+.B \--gentexsize \fInumber\fP
+Resolution of randomly generated textures, in powers of two.  4 - 12.  Default: 8
+.TP 8
+.B \--no-shader
+Disables use of vertex/fragment shaders, in case they do not work as expected.
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2009 by Ryan M. Geiss and Tugrul Galatali.
+
+Drempels is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+Drempels is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Ryan M. Geiss and Tugrul Galatali <tugrul@galatali.com>
+

@@ -1,0 +1,63 @@
+.TH "OGLC Screensaver" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+hufo_smoke - particle smoke effect.
+.SH SYNOPSIS
+.B hufo_smoke
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--foreground/-f \fInumber\fP]
+[\--background/-b \fInumber\fP]
+.SH DESCRIPTION
+From Jeremie Allard (\fIhttp://hufo.planet-d.net/codefr_us.php\fP):
+"This little smoke effect is coded with a little particle system done for 'The OpenGL Challenge'." 
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--foreground \fInumber\fP
+Set primary (dense smoke) color using hex color codes.  Default: ffffff
+.TP 8
+.B \--background \fInumber\fP
+Set secondary (light smoke) color using hex color codes.  Default: ffffff
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2000 by Jeremie Allard and Tugrul Galatali.  
+
+hufo_smoke is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+hufo_smoke is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Jeremie Allard (Hufo / N.A.A.) <hufo@planet-d.net> and Tugrul Galatali <tugrul@galatali.com>
+

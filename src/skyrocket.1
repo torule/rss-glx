@@ -1,0 +1,111 @@
+.TH "Really Slick ScreenSavers" 1 "" "X Version 11"
+.de Ds
+.Sp
+.nf
+..
+.de De
+.fi
+..
+.SH NAME
+skyrocket - fireworks show.
+.SH SYNOPSIS
+.B skyrocket
+[\--root/-r]
+[\--maxfps/-x \fInumber\fP]
+[\--vsync/-y \fInumber\fP]
+[\--dpms/-M \fInumber\fP]
+[\--maxrockets/-m \fInumber\fP]
+[\--smoke/-s \fInumber\fP]
+[\--explosionsmoke/-S \fInumber\fP]
+[\--wind/-w \fInumber\fP]
+[\--ambient/-a \fInumber\fP]
+[\--stardensity/-d \fInumber\fP]
+[\--flare/-f \fInumber\fP]
+[\--moonglow/-g \fInumber\fP]
+[\--volume/-v \fInumber\fP]
+[\--moon/-o]
+[\--no-moon/-O]
+[\--clouds/-c]
+[\--no-clouds/-C]
+[\--earth/-e]
+[\--no-earth/-E]
+[\--illumination/-i]
+[\--no-illumination/-I]
+.SH DESCRIPTION
+From Terry Walsh (\fIhttp://reallyslick.com\fP):
+"The most full-blown fireworks screensaver ever. It has bright lights, smoke trails, clouds that are illuminated by the explosions, sound effects, and plenty of other eye candy. I hope you have a powerful graphics card."
+
+Ported to Linux by Tugrul Galatali.
+.SH OPTIONS
+.TP 8
+.B \--root
+Draw on the root window.
+.TP 8
+.B \--maxfps \fInumber\fP
+Set maximum frame rate.
+.TP 8
+.B \--vsync \fInumber\fP
+Limit redraws to specified number of vertical refreshes.  0 - 100.  Default: 1
+.TP 8
+.B \--dpms \fInumber\fP
+Stop rendering new frames if the display is not on.  0 - 1.  Default: 1
+.TP 8
+.B \--maxrockets \fInumber\fP
+Maximum number of rockets.  1 - 100.  Default: 8
+.TP 8
+.B \--smoke \fInumber\fP
+Smoke lifespan (in seconds).  0 - 60.  Default: 5
+.TP 8
+.B \--explosionsmoke \fInumber\fP
+Amount of smoke in explosions (This will create an insane number of particles).  0 - 100.  Default: 0
+.TP 8
+.B \--wind \fInumber\fP
+Wind speed.  0 - 100.  Default: 20
+.TP 8
+.B \--ambient \fInumber\fP
+Ambient light.  0 - 100.  Default: 10
+.TP 8
+.B \--stardensity \fInumber\fP
+Star density.  0 - 100.  Default: 20
+.TP 8
+.B \--flare \fInumber\fP
+Lens flare brightness.  0 - 100.  Default: 20
+.TP 8
+.B \--moonglow \fInumber\fP
+Moon glow brightness.  0 - 100.  Default: 20
+.TP 8
+.B \--volume \fInumber\fP
+Sound effects volume.  0 - 100.  Default: 100
+.TP 8
+.B \--moon
+Show moon.  Default: True
+.TP 8
+.B \--clouds
+Show clouds.  Default: True
+.TP 8
+.B \--earth
+Show earth.  Default: True
+.TP 8
+.B \--illumination
+Show illumination (on clouds and earth).  Default: True
+.SH ENVIRONMENT
+.PP
+.TP 8
+.B DISPLAY
+to get the default host and display number.
+.SH SEE ALSO
+.BR X (1),
+.SH COPYRIGHT
+Copyright \(co 2002 by Terry Walsh and Tugrul Galatali.  
+
+Skyrocket is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation.
+
+Skyrocket is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+.SH AUTHOR
+Terry Walsh and Tugrul Galatali <tugrul@galatali.com>
+
